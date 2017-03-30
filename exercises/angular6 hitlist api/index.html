@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <title>A List</title>
+    <style>
+        body {
+            background: beige;
+        }
+		#x {
+			background-color: black;
+		}
+        #y {
+            height: 75px;
+            width: 125px;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+		#ss{
+			width: 200px;
+			height: 200px;
+		}
+		p {
+			color: red;
+            font-size: 25px;
+		}
+		#text {
+			background: skyblue;
+			width: 200px;
+            text-align: center;
+		}
+		h4 {
+			position: relative;
+			bottom: 30px;
+			color: aqua;
+		}
+        #w {
+            padding-right: 300px;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body ng-app="app" ng-controller="control" ng-init="loadData()">
+	<div class="container-fluid">
+		<div class="row" id="x">
+			<div class="col-md-2">
+				<img id="y" src="download.jpg" class="navbar-brand" href="#"/>
+			</div>
+			<div class="col-md-4">
+				<br>
+				<p>Don Corleons Hit List</p>
+			</div>
+		</div>
+		<br><br>
+		<div id="w" class="row">
+			<div class="col-md-3 col-md-offset-1" ng-repeat="item in items">
+				<img id="ss" ng-src="{{item.image}}">
+				<div id="text">
+					{{item.name}}
+				</div>
+				<br>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

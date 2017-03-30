@@ -1,0 +1,41 @@
+body {
+	background: #d8d8d8;
+}
+#banner {
+		background-color: #666666;
+		background-image: url("images/banner.jpg");
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		padding: 14em 0;
+		text-align: center;
+		position: relative;
+
+	}
+.add-issue {
+    text-align: center;
+}
+h1 {
+	font-family: 'Diplomata SC', cursive;
+	text-align: center;
+	color: cornflowerblue;
+}
+p {
+	font-family: 'Ranga', cursive;
+	font-size: 40px;
+	color: blue;
+}
+b {
+	font-family: 'Diplomata SC', cursive;
+	color: black;
+}
+span {
+	font-family: 'Diplomata SC', cursive;
+	color: black;
+}
+footer {
+	font-family: 'Griffy', cursive;
+	text-align: center;
+	position: relative;
+    bottom: -315px;
+}

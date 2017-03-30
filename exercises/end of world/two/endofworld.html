@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countdown</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.plugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.0.2/jquery.countdown.css" />
+    <style type="text/css">
+        #timer-buttons #btn-short-break, #timer-buttons #btn-long-break, #timer-buttons.break #btn-start-timer
+        {
+            display: none;
+        }
+        #timer-buttons.break #btn-short-break, #timer-buttons.break #btn-long-break
+        {
+            display: inline;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var $timer = $('#timer');
+            var $timerButtons = $('#timer-buttons');
+
+            $('#btn-start-timer').click(function (event) {
+                // get the current time when button clicked
+                var currentTime = moment();
+                // add 20 seconds for interval
+                var timerInterval = moment(currentTime).add(2, 's');
+                // format interval
+                var timerIntervalFormatted = moment(timerInterval).format('YYYY/MM/DD HH:mm:ss');
+
+                // start the 20 seconds timer and at the end breaks
+                $timer.removeClass('is-countdown').html('').countdown({
+                    until: timerInterval._d,
+                    onExpiry: function () {
+                        $timerButtons.toggleClass('break');
+                        $('body').css('background', 'black');
+                        $('img').css('display', 'none');
+                        $('h1').css('color', 'white');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <center>
+            <img src="endimage.jpg"> <br>
+            <h1> THE END </h1>
+        </center>
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <div id="timer"></div>
+            </div>
+            <br />
+            <div class="containter-fluid" id="timer-buttons">
+                <br><br><br>
+                <center><span><button type="button" class="btn btn-primary btn-md" id="btn-start-timer"> START </button></span></center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="converter">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+  <title>Temperature Converter</title>
+</head>
+<body ng-controller="MainController">
+    <div class="row">
+        <br><br><br>
+    </div>
+	<div class="row">
+	    <div class="col-lg-3 col-lg-offset-4">
+		    <input type="number" ng-model="a">℃  ⟷⟷⟷⟷⟷
+        </div>
+        <div class="col-lg-4">
+		    <input type="number" ng-model="a" converter="c2f">℉
+		</div>
+	</div>
+<script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

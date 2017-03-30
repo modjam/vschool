@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<title>angular</title>
+	
+	</head>
+<body>
+    <div class="container" ng-app="app" ng-controller="control">
+        <h1 style="text-align: center"><strong>Angular Exercise</strong></h1>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" ng-model="firstName" placeholder="First Name" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" ng-model="lastName" placeholder="Last Name" class="form-control" required>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" ng-model="email" placeholder="Email" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" ng-model="placeOfBirth" placeholder="Place Of Birth" class="form-control" required>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="number" ng-model="phone" placeholder="Phone" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" ng-model="food" placeholder="Faver Food" class="form-control" required>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <textarea ng-model="info" placeholder="tell us about your self" class="form-control" rows="5" required></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-6">
+                <button ng-click="submit()" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        <br>
+        <div class="container" ng-show="submitted">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Badge</a>
+                    </div>
+                </div>
+            </nav>
+<!--           <div ng-repeat="name in arr">-->
+            <div class="row">
+                <div class="col-md-6">
+                        <p>{{"Name: " + firstName + " " + lastName}}</p>
+                </div>
+                <div class="col-md-6">
+                        <p>{{"Phone Num: " + phone}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                        <p>{{"Place Of Birth: " + placeOfBirth}}</p>
+                </div>
+                <div class="col-md-6">
+                        <p>{{"Your Favorite Food: " + food}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                        <p>{{"Your Email: " + email}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                        <p>{{"Information: " + info}}</p>
+                </div>
+            </div>
+<!--        </div>-->
+    </div>
+    </div>
+<script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+ <script src= "app3.js"></script>
+	</body>
+</html>

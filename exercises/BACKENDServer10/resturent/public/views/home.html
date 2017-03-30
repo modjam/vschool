@@ -1,0 +1,43 @@
+<div ng-controller="homeCtrl" ng-init="loadData()">		
+	<h1>MENU</h1>
+<br><br>
+	<div class="row">
+		<div class="col-md-3 col-md-offset-5">
+			<div ng-repeat="item in Items track by $index">
+				<div ng-if="!item.isEdit">
+					<p>NAME:&emsp;<strong>{{item.name}}</strong></p>
+					<p>COST:&emsp;<strong>{{item.cost | currency}}</strong></p>
+					<p>STATUS:&emsp;<strong>{{item.isFine}}</strong></p>&emsp;
+					<button type="button" class="btn btn-info btn-circle btn-xs">
+						<i class="glyphicon glyphicon-pencil" ng-click="toggleEdit($index)">
+                        </i>
+					</button>
+					<button class="btn btn-danger btn-xs" ng-click="remove(item._id)">
+						<i class="glyphicon glyphicon-remove" ng-click="remove(item._id)">
+                        </i>
+					</button>
+				</div>
+				<br>
+				<div ng-if="item.isEdit">
+					<input ng-model="item.name">
+					<input ng-model="item.cost">
+					<br>
+					<button class="btn btn-success btn-circle btn-xs"> <i class="glyphicon glyphicon-ok" ng-click="save(item._id, item)">
+                        </i>
+					</button>
+				</div>
+				<br>
+			</div>
+		</div>
+	</div><br><br>
+	<div class="row">
+		<div class="col-md-3 col-md-offset-5">
+			<input ng-model="userInput.name" placeholder="New Name">
+			<input ng-model="userInput.cost" placeholder="New Cost"><br>&emsp;&emsp;&emsp;&emsp;&emsp;
+			<button class="btn btn-primary btn-xs">
+				<i class="glyphicon glyphicon-plus" ng-click="addItem()">
+                        </i>
+			</button>
+		</div>
+	</div>
+</div>

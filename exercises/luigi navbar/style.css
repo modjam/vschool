@@ -1,0 +1,35 @@
+.black {
+	background: black;
+	height: 60px;
+	color: white;
+}
+.green {
+	background: green;
+	height: 450px;
+	text-align: center;
+}
+img {
+	display: block;
+	margin: 0 auto;
+}
+h1 {
+	font-size: 60px;
+}
+hr {
+	width: 20%;
+}
+h3 {
+	font-size: 20px;
+}
+hr.star {
+    border-top: 2px solid white;
+	text-align: center;
+}
+hr.star:after {
+	content: '\002A';
+	display: inline-block;
+	position: relative;
+	top: -30px;
+	padding: 0 10px;
+	font-size: 60px;
+}

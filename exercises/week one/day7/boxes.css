@@ -1,0 +1,41 @@
+.w {
+    display: inline-block;
+    border-style: hidden;
+}
+#x {
+    display: inline-block;
+    background-color: aqua;
+    height: 50px;
+    width: 400px;
+    margin-bottom: 5px;
+}
+.y {
+    display: inline-block;
+    background-color: aquamarine;
+    height: 50px;
+    width: 96.5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.z {
+    display: inline-block;
+    background-color: beige;
+    height: 50px;
+    width: 195px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#a {
+    display: inline-block;
+    background-color: brown;
+    height: 50px;
+    width: 292.5px;
+    margin-top: 5px;    
+}
+#b {
+    display: inline-block;
+    background-color: crimson;
+    height: 50px;
+    width: 97.5px;
+    margin-top: 5px;
+}

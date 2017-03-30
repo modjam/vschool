@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<title></title>
+    <style>
+        body {
+            background-color: beige;
+        }
+        .pabout {
+            font-size: 18px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body ng-app="app">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Angular Routing</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#/home"> Home</a></li>
+            <li><a href="#/about"> About</a></li>
+            <li><a href="#/whyilove"> Why I love</a></li>
+        </ul>
+    </div>
+</nav>
+<div ng-view></div>
+<script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.6.2/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="./home/homeapp.js"></script>
+<script src="./about/aboutapp.js"></script>
+<script src="./whyilove/whyiloveapp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body {
+    background-color: azure;
+}
+h3 {
+    color: black;
+}
+
+/*
+.pabout {
+    font-size: 18px;
+    margin: 20px;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    padding-top: 10px;
+    margin-left: 45px;
+}
+
+#images {
+    margin: 25px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+#x {
+    text-align: center;
+}
+
+.btn-info {
+    margin-left: 250px;
+}
+
+#map_canvas {
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.angular-google-map-container {
+    height: 400px;
+}
+*/
+
+.navbar {
+    background-color: #337ab7;
+}
+
+footer {
+    color: black;
+    margin-top: 60%;
+    text-align: center;
+}

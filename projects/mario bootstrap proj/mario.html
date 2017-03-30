@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="mario.css"/>
+</head>
+<body>
+	<div class="container">
+        <center> 
+    <div class="row">
+        <div class="col-md-12">
+	       <h1>Mario Pest Control</h1>
+        </div>
+    </div>
+		<br><br><br>
+	<div class="row">
+        <div class="col-md-4">
+	       <img src="bob-oms1.png">
+            <br>
+	       <input class="btn btn-primary" type="button" value="Add bob" title="Bob" onclick="bobFunction()">
+	       <br>
+            <label title="bob">Bob 7 coins <br>Total Bob Coins <span id="totalResultBob">0 </span> </label><br>
+        </div><br>
+        <div class="col-md-4">
+            <br>
+           <input id="boboms" class="form-control" min=0 type = "number" placeholder="boboms"><br> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+	       <img src="cheep-cheeps.png">
+            <br>
+           <input class="btn btn-warning" type="button" value="Add Cheep" title="cheep" onclick="cheepFunction()"><br>
+           <label title="cheep">Cheep 11 coins <br>Total Cheep Coins <span id="totalResultCheep">0 </span></label><br>
+        </div><br>
+        <div class="col-md-4">
+            <br>
+            <input id="cheep-cheep" class="form-control" min=0 type = "number" placeholder="cheep-cheep"><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+	       <img src="goom-bas.png">
+            <br>
+           <input class="btn btn-danger" type="button" value="Add Goom" title="goom" onclick="goomFunction()"><br>
+           <label title="goom">Goom 5 coins <br>Total Goom Coins <span id="totalResultGoom">0 </span></label> <br>
+	    </div><br>
+        <div class="col-md-4">
+            <br>
+           <input id="Gooms" class="form-control" min=0 type = "number" placeholder="Gooms"><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <input id="totalSum" class="form-control" type = "number" readonly placeholder="Your Coins Balance"><br>
+        </div>
+    </div>
+        </center>
+	</div>
+        	<footer> Mario@yahoo.com / www.mario.com / Utah - USA
+        </footer>
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+	<script src="mario.js"></script>
+</body>
+</html>

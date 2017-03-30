@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>directives</title>
+</head>
+<body ng-app="app" ng-controller="ctrl">
+	<div class="row">
+		<br>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 col-lg-offset-4">
+			<h1>Shop Items</h1>
+		</div>
+	</div>
+	<div class="row">
+		<br>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 col-lg-offset-1">
+			<input ng-model="name" type="text" placeholder="Name of Item">
+		</div>
+		<div class="col-lg-4">
+			<input ng-model="amount" min=0 type="number" placeholder="Amount of sell">
+		</div>
+		<div class="col-lg-4">
+			<input ng-model="price" min=0 type="number" placeholder="Price of item">
+		</div>
+	</div>
+	<div class="row">
+		<br>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 col-lg-offset-1">
+			{{name}}
+		</div>
+		<div class="col-lg-4">
+			{{amount}}
+		</div>
+		<div class="col-lg-4">
+			{{price}}
+		</div>
+	</div>
+	<div class="row">
+		<br>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 col-lg-offset-4">
+			<button class="btn btn-info btn-sm" ng-click="addShopItem()">Add</button>
+		</div>
+	</div>
+   <div class="row">
+	<br>
+</div>
+<div class="row">
+	<div class="col-lg-4 col-lg-offset-4">
+		<div ng-repeat="item in shopItems">
+			<item-in-shop name="item.name" amount="item.amount" price="item.price" curr="$"></item-in-shop>
+		</div>
+	</div>
+</div>
+<script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/directives/shop/shopItem.js"></script>
+</body>
+</html>

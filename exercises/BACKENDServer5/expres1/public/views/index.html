@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<title>My first web server</title>
+	<link href="/css/style.css" type="text/css" rel="stylesheet"></link>
+</head>
+<body ng-app="app" ng-controller="control">
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-3">
+				<h1>My API</h1>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-5">
+				<h2>Menu:</h2>
+				<button ng-click="loadData()" >post</button>
+				<ul ng-repeat="itm in items track by $index">
+					<li>{{itm.name}}</li>
+					<li>{{itm.cost}}</li>
+					<li>{{itm.type}}</li>
+<!--
+					<button ng-click="delData(item._id)" class="btn btn-danger btn-xs" btn-xs>Delete</button>
+					<button ng-click="editTodo(item._id,task)" class="btn btn-primary btn-xs">edit</button>
+-->
+				</ul>
+			</div>
+		</div>
+		<br><br>
+<!--
+		<div class="row">
+			<div class="col-md-3 col-md-offset-4">
+				<input type="text" ng-model="task" placeholder="enter name">
+				<input type="number" ng-model="task1" placeholder="enter cost">
+				<input type="text" ng-model="task2" placeholder="enter type">
+				<button ng-click="postData()" class="btn btn-info btn-xs">Post</button>
+			</div>
+		</div>
+		<br><br>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-5">
+				<input type="text" ng-model="tasks" placeholder="enter new title then edit">
+			</div>
+		</div>
+-->
+	</div>
+	<script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+	<script src="../js/app.js"></script>
+</body>
+</html>

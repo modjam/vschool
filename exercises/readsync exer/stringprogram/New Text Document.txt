@@ -1,0 +1,45 @@
+
+
+C:\classwork\exercises>mkdir stringprogram
+
+C:\classwork\exercises>cd stringprogram
+
+C:\classwork\exercises\stringprogram>npm init -y
+Wrote to C:\classwork\exercises\stringprogram\package.json:
+
+{
+  "name": "stringprogram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+
+C:\classwork\exercises\stringprogram>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 0031-44DE
+
+ Directory of C:\classwork\exercises\stringprogram
+
+01/02/2017  06:43 PM    <DIR>          .
+01/02/2017  06:43 PM    <DIR>          ..
+01/02/2017  06:43 PM               227 package.json
+               1 File(s)            227 bytes
+               2 Dir(s)  440,634,167,296 bytes free
+
+C:\classwork\exercises\stringprogram>npm install -S readline-sync
+npm WARN package.json stringprogram@1.0.0 No description
+npm WARN package.json stringprogram@1.0.0 No repository field.
+npm WARN package.json stringprogram@1.0.0 No README data
+readline-sync@1.4.5 node_modules\readline-sync
+
+C:\classwork\exercises\stringprogram>
+
+https://www.npmjs.com/package/readline-sync 

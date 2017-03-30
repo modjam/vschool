@@ -1,0 +1,28 @@
+h1 {
+	text-align: center;
+	font-size: 32px;
+}
+
+.x {
+    width: 100px;
+    margin-left: 8px;
+}
+span.w {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right: 30%;
+    bottom: 50%;
+}
+span input {
+    margin: 10px;
+}
+footer {
+	text-align: center;
+	position: absolute;
+    font-weight: bold;
+	color: black;
+	height: 0;
+	width: 100%;
+	bottom: 0;
+}

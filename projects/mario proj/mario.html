@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="mario.css"/>
+    <style> 
+        body {
+            background-image: url(Background.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+	<h1>Mario Pest Control</h1>
+	<div>
+	   <img src="bob-oms.jpg">
+       <br>
+	    <input class="x" type="button" value="Add bob" title="Bob" onclick="bobFunction()">
+	<br/>
+       <label title="bob">Bob 7 coins <br>Total Bob Coins <span id="totalResultBob">0 </span> </label><br>
+    </div><br>
+    <div>
+	   <img src="cheep-cheeps.jpg">
+       <br>
+       <input class="x" type="button" value="Add Cheep" title="cheep" onclick="cheepFunction()"><br>
+       <label title="cheep">Cheep 11 coins <br>Total Cheep Coins <span id="totalResultCheep">0 </span></label><br>
+    </div><br>
+    <div>
+	   <img src="goom-bas.jpg">
+       <br>
+       <input class="x" type="button" value="Add Goom" title="goom" onclick="goomFunction()"><br>
+       <label title="goom">Goom 5 coins <br>Total Goom Coins <span id="totalResultGoom">0 </span></label> <br>
+	</div><br>
+    <span class="w">
+    <input id="boboms" type = "number" placeholder="boboms"><br>
+    <input id="cheep-cheep" type = "number" placeholder="cheep-cheep"><br>
+    <input id="Gooms" type = "number" placeholder="Gooms"><br>
+    <input id="totalSum" type = "number" readonly placeholder="Your Coins Balance"><br>
+    </span>
+    <footer> Mario@yahoo.com / www.mario.com / Utah - USA
+    </footer>
+   
+	<script src="mario.js"></script>
+</body>
+</html>

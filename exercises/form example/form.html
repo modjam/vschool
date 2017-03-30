@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel Form </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href=""/>
+	</head>	
+	<body>
+		<form>
+            <label for="firstName">First Name</label>
+            <input id="firstName" type="text" class="form-control" name="firstName" placeholder="FirstName"><br>
+            <label for="lastName">Last Name</label>
+            <input id="lastName" type="text" class="form-control" name="lastName" placeholder="LastName">
+            <br>
+			<label for="age">Age</label>
+			<input id="age" type="text" class="form-control" name="age" placeholder="Age">
+            <br>
+            <label for="gender">Gender</label><br>
+            <label><input id="male" type="checkbox" name="checkbox" value="Male" class="checkbox abc-checkbox">Male</label>
+            <label><input id="female" type="checkbox" name="checkbox" value="Female" class="checkbox abc-checkbox">Female</label>
+            <br>
+            <label for="Destination">Destination</label>
+            <select id="destination" class="form-control"> 
+                <option value="USA">United States of America </option> 
+                <option value="LEBANON">Lebanon </option> 
+                <option selected value="FRANCE">France </option> 
+            </select> 
+            <br>
+            <label for="checkbox">Food Restriction</label><br>
+            <label><input id="rest1" type="checkbox" class=" checkbox abc-checkbox" value="vegetarian"> Vegetarian</label><br>
+            <label><input id="rest2" type="checkbox" class=" checkbox abc-checkbox" value="lactoseFree"> Lactose Free</label><br>
+            <label><input id="rest3" type="checkbox" class=" checkbox abc-checkbox" value="diabetic"> Diabetic</label><br>
+            <button id="btn" value="Submit" class="btn-info">Submit</button>
+		</form>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="form.js"></script>
+	</body>
+</html>

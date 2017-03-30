@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body ng-app="app" ng-controller="ctrl">
+    <div class="container">
+        <div class="row" ng-init="loadData()">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="row text-center" ng-repeat="list in menuList track by $index">
+                    <div class="col-md-12">
+                        <div ng-show="oldData[$index]">
+                            <div>{{list.name}}</div>
+                            <div>{{list.cost}}</div>
+                            <div>{{list.type}}</div>
+                        </div>
+                        <div ng-show="updatedData[$index]">
+                            <input type="text" ng-model="list.name" ng-init="list.name" class="form-control">
+                            <input type="text" ng-model="list.cost" ng-init="list.cost" class="form-control">
+                            <input type="text" ng-model="list.type" ng-init="list.type" class="form-control">
+                        </div>
+                        <div>
+                            <button ng-click="del(list._id)" class="btn btn-primary">Delete</button>
+                            <button ng-click="updateData($index)" class="btn btn-success" ng-show="updateBtn[$index]">update</button>
+                            <button ng-click="confirmUpdate($index,list._id,list.name,list.cost,list.type)" class="btn btn-success" ng-show="takeUpdate[$index]">update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input class="form-control" placeholder="Name" type="text" ng-model="name">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="form-control" placeholder="cost" type="number" ng-model="cost">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="form-control" placeholder="Type" type="text" ng-model="type" class="btn btn-primary">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <button ng-click="add()">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

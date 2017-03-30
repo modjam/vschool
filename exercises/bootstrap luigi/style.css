@@ -1,0 +1,37 @@
+.orange {
+	background: orange;
+	height: 60px;
+	font-size: 40px;
+}
+.mylable {
+	color: red;
+	margin: 25px;
+}
+.red {
+	background: red;
+	height: 350px;
+	padding-top: 15px;
+}
+img {
+	display: block;
+	margin: 0 auto;
+}
+.white {
+	text-align: center;
+    color: cornflowerblue;
+}
+h1 {
+	font-size: 60px;
+}
+h4 {
+	font-size: 25px;
+}
+.yellow {
+	background: yellow;
+	height: 50px;
+}
+.yellow img {
+	width: 50px;
+	position: absolute;
+	right: 0;
+}

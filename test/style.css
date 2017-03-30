@@ -1,0 +1,35 @@
+body {
+	background: darkblue;
+}
+.navbar {
+	background: darkblue;
+}
+#log {
+	float: right;
+}
+a {
+	color: white;
+}
+#env {
+	width: 190px;
+	height: 90px;
+}
+.size {
+	font-size: 50px;
+}
+#th {
+	width: 93px;
+	height: 90px;
+}
+#empty {
+	width: 15px;
+}
+#empty1 {
+	margin-right: -62px;
+}
+.brief {
+	background: green;
+}
+.search{
+	background-image: url("blue.jpg");
+}

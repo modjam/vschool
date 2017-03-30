@@ -1,0 +1,9 @@
+p { 
+    color:aqua;
+}
+#xx p {
+    color:chartreuse;
+}
+a {
+    color:blueviolet;
+}

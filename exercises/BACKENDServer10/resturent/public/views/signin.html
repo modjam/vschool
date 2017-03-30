@@ -1,0 +1,28 @@
+<div class="container" ng-controller="signinCtrl">
+   <div class="row text-center">
+	<div class="col-md-12">
+		<h1>SignIn Please</h1>
+	</div>
+	</div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Username</h3>
+                    <input type="text" placeholder="Username" ng-model="user.username">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Password</h3>
+                    <input type="password" placeholder="Password" ng-model="user.password">
+                </div>
+            </div><br>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <button class="btn btn-primary btn-xs" ng-click="signin()" ng-disabled="!user.username.length>0  && !user.password.length>0">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <title>Counter</title>
+    <style>
+        body {
+            background: skyblue;
+        }
+    </style>
+</head>
+<body ng-app="app" ng-controller="control">
+    <div class="container">
+           <br><br>
+            <div class="row">
+				<div class="col-md-4 col-md-offset-5">
+                   <h1>like image</h1>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-2">
+                   <img src="download.jpg" style="width=200px height=200px;"><br>
+                    <button class="btn btn-info" ng-click="addR()">Like</button>
+                </div>
+                <div class="col-md-4">
+                <img src="download1.jpg" style="width=200px height=200px;"><br>
+					<button class="btn btn-primary" ng-click="addB()">Like</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-2">
+                    <h2>{{picAA}}</h2>
+                </div>
+                <div class="col-md-6">
+					<h2>{{picBB}}</h2>
+				</div>
+			</div>
+			<div class="row">
+                <div class="col-md-4 col-md-offset-5">
+					<button class="btn btn-warning" ng-click="reset()">Reset</button>
+				</div>
+			</div>
+    </div>
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

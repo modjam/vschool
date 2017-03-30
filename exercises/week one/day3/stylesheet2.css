@@ -1,0 +1,15 @@
+#first{ 
+        color: yellow;
+    }
+#second{ 
+        color: red;
+    }
+#third{ 
+        color: blue;
+    }
+.x{ 
+        background-color: green;
+    }
+.y{
+        font-size: 50px;
+    }
