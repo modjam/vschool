@@ -1,16 +1,16 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema
 
-var todoSchema = new Schema({
-    name: {
+var userSchema = new Schema({
+    username: {
         type: String,
         required: true,
         unique: true
     },
-    isDone: {
-        type: Boolean,
+    password: {
+        type: String,
         required: true
     }
 })
 
-module.exports = mongoose.model("Todo", todoSchema);
+module.exports = mongoose.model("User", userSchema);

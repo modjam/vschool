@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 //setup authoriztion
-app.use("/todo", expressJwt({secret: config.secret}));
+//app.use("/todo", expressJwt({secret: config.secret}));
 
 //import routes
 var apiRouter = require("./routes/api.js");

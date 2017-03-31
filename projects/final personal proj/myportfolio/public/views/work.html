@@ -1,4 +1,4 @@
-<div class="container" ng-controller="workCtrl">
+<div class="container" ng-controller="workCtrl" ng-init="loadData()">
     <div class="row text-center">
         <div class="col-md-12">
             <h1>My Web Projects</h1>
@@ -7,19 +7,46 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
 
-            <div class="w3-content w3-display-container">
-                <img class="mySlides" src="../views/images/mario.png" style="width:100%">
-                <img class="mySlides" src="../views/images/mariobootstrab.png" style="width:100%">
-                <img class="mySlides" src="../views/images/score.png" style="width:100%">
-                <img class="mySlides" src="../views/images/business.png" style="width:100%">
-                <img class="mySlides" src="../views/images/rocvote.png" style="width:100%">
+            <div class="content display-container">
+                <img class="mySlides" src="../views/images/mario.png">
+                <img class="mySlides" src="../views/images/mariobootstrab.png">
+                <img class="mySlides" src="../views/images/score.png">
+                <img class="mySlides" src="../views/images/business.png">
+                <img class="mySlides" src="../views/images/rocvote.png">
                 
-                <center>
+                
                 <button class="btn btn-info btn-xs" onclick="plusDivs(-1)">&#10094;&#10094;</button>
                 <button class="btn btn-info btn-xs" onclick="plusDivs(1)">&#10095;&#10095;</button>
-                </center>
+                
             </div>
 
         </div>
     </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-2">
+            <div class="row" ng-repeat="item in list track by $index">
+                <div class="col-md-12">
+                   <div ng-if="!item.isEdit">
+                       <div><img ng-src="{{item.name}}"></div>
+                       <button ng-click="remove(item._id)" class="btn btn-danger btn-xs glyphicon glyphicon-remove"></button>
+                       <button ng-click="edit($index)" class="btn btn-success btn-xs glyphicon glyphicon-pencil"></button>
+                   </div>
+                   <div ng-if="item.isEdit">
+                       <input class="form-control" placeholder="new project" ng-model="item.name">
+                       <button ng-click="save(item._id, item)" class="btn btn-success btn-xs glyphicon glyphicon-ok"></button>
+                   </div>
+                   <br>
+                </div>
+            </div>
+            <br>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <input type="text" placeholder="new project" class="form-control" ng-model="userInput.name">
+                    <button ng-click="add()" class="btn btn-info btn-xs glyphicon glyphicon-plus"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </div>
