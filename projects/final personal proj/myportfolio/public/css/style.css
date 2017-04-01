@@ -4,57 +4,53 @@ body {
 h3 {
     color: black;
 }
-
-/*
-.pabout {
-    font-size: 18px;
-    margin: 20px;
+span {
+    color: black;
+	font-size: 30px;
 }
-
-img {
-    width: 250px;
-    height: 200px;
-    padding-top: 10px;
-    margin-left: 45px;
+#homePar {
+	font-size: 32px;
 }
-
-#images {
-    margin: 25px;
-}
-
-h2 {
+#stars {
     text-align: center;
+    font-size: 30px;
 }
-
-h4 {
+hr {
+    border: 1px solid #ccc;
+}
+.fa {
+    padding: 5px;
+    margin-right: 50px;
+    font-size: 30px;
+    width: 50px;
     text-align: center;
+    text-decoration: none;
 }
-
-#x {
-    text-align: center;
+.fa:hover {
+    opacity: 1;
 }
-
-.btn-info {
-    margin-left: 250px;
+.fa-facebook {
+    background: #3B5998;
+    color: white;
 }
-
-#map_canvas {
-    height: 300px;
-    width: 100%;
-    background-color: aqua;
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
 }
-
-.angular-google-map-container {
-    height: 400px;
+.fa-instagram {
+    background: #3B5998;
+    color: white;
 }
-*/
-
+.fa-skype {
+    background: #55ACEE;
+    color: white;
+}
 .navbar {
     background-color: beige
 }
 
 footer {
     color: black;
-    margin-top: 50%;
+    margin-top: 15%;
     text-align: center;
 }

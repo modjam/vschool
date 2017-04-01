@@ -9,7 +9,7 @@ var todoSchema = new Schema({
     },
     isDone: {
         type: Boolean,
-        required: true
+		default: false
     }
 })
 
