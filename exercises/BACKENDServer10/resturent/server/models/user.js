@@ -10,7 +10,12 @@ var userSchema = new Schema({
 	password: {
 		type: String,
 		required: true
-	}
+	},
+    privilege: {
+    type: String,
+    enum: ["admin", "user"],
+    required: true
+  }
 });
 
 module.exports = mongoose.model("User", userSchema);

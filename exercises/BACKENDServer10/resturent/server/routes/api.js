@@ -2,6 +2,7 @@ var express = require("express");
 var mongoose = require("mongoose");
 var apiRouter = express.Router();
 var Menu = require("../models/menu.js");
+var adminPriv = require("../middleware/admPriv.js");
 
 
 apiRouter.get("/", function(req, res) {
@@ -25,6 +26,8 @@ apiRouter.post("/", function (req, res) {
 		}
 	});
 });
+
+var userPriv = require("../middleware/userPriv.js");
 
 apiRouter.delete("/:id", function(req, res) {
 	Menu.findOne({_id: req.params.id}, function(err, menuItem) {
