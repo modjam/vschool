@@ -6,12 +6,12 @@ var todoSchema = new Schema({
     type: String,
     required: true
   },
-  description: String,
-  cost: Number,
-  isDone: {
-    type: Boolean,
-    default: false
-  },
+//  description: String,
+//  cost: Number,
+//  isDone: {
+//    type: Boolean,
+//    default: false
+//  },
   username: {
     type: String,
     required: true

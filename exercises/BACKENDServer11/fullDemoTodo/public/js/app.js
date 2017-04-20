@@ -31,3 +31,10 @@ app.service("AuthSerivce", function($q, $location, tokenService ) {
 app.config(function($httpProvider) {
   $httpProvider.interceptors.push("AuthSerivce");
 })
+
+app.controller("homeCtrl",function($scope,tokenService,$location){
+    $scope.logout=function(){
+        tokenService.removeToken();
+        $location.path("/");
+    }
+})
