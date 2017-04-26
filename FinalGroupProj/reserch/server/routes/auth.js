@@ -64,7 +64,8 @@ authRouter.post("/signin", function (req, res) {
 					res.status(200).send({
 						"message": "Here is your token sir",
 						token: token,
-						priv: data.privilage
+						priv: data.privilage,
+                        username:data.username
 					});
 				} else {
 					res.status(403).send({

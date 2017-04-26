@@ -1,10 +1,10 @@
 .contact-form{ margin-top:15px;}
 .contact-form .textarea{ min-height:220px; resize:none;}
 .form-control{ box-shadow:none; border-color:#eee; height:49px;}
-.form-control:focus{ box-shadow:none; border-color:#00b09c;}
+.form-control:focus{ box-shadow:none; border-color:#55ACEE;}
 .form-control-feedback{ line-height:50px;}
-.main-btn{ background:#00b09c; border-color:#00b09c; color:#fff;}
-.main-btn:hover{ background:#00a491;color:#fff;}
+.main-btn{ background:#337ab7; border-color:#55ACEE; color:#fff;}
+.main-btn:hover{ background:#337ab7;color:#fff;}
 .form-control-feedback {
 line-height: 50px;
 top: 0px;
@@ -14,6 +14,7 @@ top: 0px;
 
 
 
+#logo{display:block; background:url("../images/logo.png") no-repeat; width:192px; height:58px; text-indent:-5000px;}
 
 
 
@@ -36,10 +37,12 @@ body {
         padding-right: 0;
     }
 
+/*
 #www{
 height: 450px;
 width: 1100px;
 }
+*/
 .header {
     border-bottom: 1px solid #e5e5e5;
 }
@@ -99,6 +102,7 @@ width: 1100px;
     }
 */
 
+/*
    #banner {
 		background-color: #666666;
 		background-image: url("www.jpeg");
@@ -110,25 +114,26 @@ width: 1100px;
 		position: relative;
 
 	}
+*/
 .add-issue {
     text-align: center;
 }
 h1 {
-	font-family: 'Diplomata SC', cursive;
+/*	font-family: 'Diplomata SC', cursive;*/
 	text-align: center;
 	color: cornflowerblue;
 }
 p {
-	font-family: 'Ranga', cursive;
+/*	font-family: 'Ranga', cursive;*/
 	font-size: 20px;
 	color: blue;
 }
 b {
-	font-family: 'Diplomata SC', cursive;
+/*	font-family: 'Diplomata SC', cursive;*/
 	color: black;
 }
 span {
-	font-family: 'Diplomata SC', cursive;
+/*	font-family: 'Diplomata SC', cursive;*/
 	color: black;
 }
 /*
@@ -150,6 +155,7 @@ footer {
 .fa:hover {
     opacity: 1;
 }
+/*
 .fa-facebook {
     background: #3B5998;
     color: white;
@@ -161,4 +167,4 @@ footer {
 .fa-skype {
     background: #55ACEE;
     color: white;
-}
+}*/

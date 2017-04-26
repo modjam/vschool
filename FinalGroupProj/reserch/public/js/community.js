@@ -1,4 +1,4 @@
-var app = angular.module("app.community", ["ngRoute", "requestsModule","privModule"]);
+var app = angular.module("app.community", ["ngRoute", "requestsModule","privModule","userModule"]);
 
 app.config(function($routeProvider) {
   $routeProvider.when("/community", {
@@ -7,13 +7,16 @@ app.config(function($routeProvider) {
   });
 });
 
-app.controller("communityCtrl", function($scope, reqService,privService) {
+app.controller("communityCtrl", function($scope, reqService,privService,userService) {
   $scope.showTitle = [];
     $scope.editBtn = [];
     $scope.items = [];
     $scope.showComments = [];
     $scope.showDesc = [];
     $scope.priv = privService.getPriv();
+    $scope.username = userService.getUser();
+    console.log($scope.priv);
+  console.log($scope.username);
     
     $scope.loadData = function () {
 		reqService.getData().then(function (response) {
@@ -74,7 +77,8 @@ app.controller("communityCtrl", function($scope, reqService,privService) {
 			title: $scope.title,
 			description: $scope.desc,
 			upvote: 0,
-            downvote: 0
+            downvote: 0,
+//            username:$scope.username
 		}
 		reqService.postData(data).then($scope.loadData);
 		$scope.title = "";
