@@ -35,8 +35,8 @@ var app = angular.module('gservice', [])
         var currentSelectedMarker;
 
 
-        var selectedLat = -6.493;
-        var selectedLong = -106.809;
+        var selectedLat = 0;
+        var selectedLong = 0;
 
         googleMapService.refresh = function (latitude, longitude, filteredResults) {
 

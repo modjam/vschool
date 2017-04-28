@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['addCtrl', 'queryCtrl','modelCtrl', 'headerCtrl', 'geolocation', 'gservice', 'ngRoute','app.community','tokenModule','app.signin','app.signup'])
+var app = angular.module('myApp', ['addCtrl', 'queryCtrl','modelCtrl', 'headerCtrl', 'geolocation', 'gservice', 'ngRoute','app.community','tokenModule','app.signin','app.signup',"privModule","userModule"])
 
 
     .config(function($locationProvider,$routeProvider){
@@ -56,6 +56,8 @@ app.service("AuthSerivce", function($q, $location, tokenService ) {
     }
     return config;
   };
+    
+    
 
   this.responseError = function(response) {
     if(response.status == 401) {
@@ -70,9 +72,15 @@ app.config(function($httpProvider) {
   $httpProvider.interceptors.push("AuthSerivce");
 })
 
-app.controller("homeCtrl",function($scope,tokenService,$location){
+app.controller("homeCtrl",function($scope,tokenService,$location,privService,userService){
+    $scope.priv = function() {
+        return privService.getPriv();
+    }
+       
     $scope.logout=function(){
         tokenService.removeToken();
+        privService.removePriv();
+        userService.removeUser();
         $location.path("/");
     }
 })

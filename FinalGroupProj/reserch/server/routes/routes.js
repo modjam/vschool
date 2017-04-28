@@ -47,22 +47,17 @@ modelRouter.get('/', function(req, res){
             }
         });
     });
-modelRouter.get("/", function (req, res) {
-   Profile.find({}, function (err, data) {
-        if (err) {
-            res.status(500).send({
-                "massege": "there are err",
-                err: err
-            })
-        } else {
-            res.status(200).send({
-                "massege": "there are data",
-                data: data
-            })
+modelRouter.get('/:username', function(req, res){
 
+       Profile.findOne({"username": req.params.username}, function(err, data) {
+    if(err) {
+      res.status(500).send({"message": "Err", err: err});
+    }  else {
+          res.status(200).send({"message": "Data has been updated", data: data});
         }
-    })
-})
+      })
+    });
+
 modelRouter.use(superuserRouter);
 modelRouter.post("/", function(req, res) {
   var newProfile = new Profile(req.body);
@@ -123,6 +118,7 @@ modelRouter.post('/query/', function(req, res){
         var minAge          = req.body.minAge;
         var maxAge          = req.body.maxAge;
         var favLang         = req.body.favlang;
+      var more         = req.body.more;
         var reqVerified     = req.body.reqVerified;
 
        

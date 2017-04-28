@@ -78,15 +78,23 @@
           
           <div class="caption">
               
+<!--
                 <form name ="bla" style="color:#337ab7">
  <i class="fa fa-camera-retro fa-1x"></i>
                <h3>{{dataFromMap.username}}</h3>
-<p>{{dataFromMap.age}}</p>
-   
 
-    <p>gender: {{dataFromMap.gender}}</p>
-    <p>fav: {{dataFromMap.favlang}}</p>
+    <p>{{dataFromMap.favlang}}</p>
+                    
      </form>
+-->
+              <div class="col-md-5" ng-init="loadData()">
+    <h1><p><b>User Name</b>: {{dataFromMap.username}}</p></h1>
+    <h1><p><b>Age</b>: {{dataFromMap.age}}</p></h1>
+    <h1><p><b>gender</b>: {{dataFromMap.gender}}</p></h1>
+    <h1><p><b>gender</b>: {{dataFromMap.favlang}}</p></h1>
+    
+   
+</div>
           </div>
        
       </div>
