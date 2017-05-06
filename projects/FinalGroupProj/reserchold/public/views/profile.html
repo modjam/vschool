@@ -1,0 +1,419 @@
+<div class="container" ng-init="loadMyData()">
+    
+       <br>
+     <br>
+     <br>
+    
+<div class="container-fluid">
+  <div class="row">
+    <div class="fb-profile">
+<!--        <img align="left" class="fb-image-lg" src="../images/ss.jpg" alt="Profile image example" style=" height: 300px;"/>-->
+        
+    </div>
+  </div>
+</div> <!-- /container fluid-->  
+<div class="container">
+  <div class="col-sm-4">
+
+      <div data-spy="scroll" class="tabbable-panel">
+        <div class="tabbable-line">
+          <ul class="nav nav-tabs ">
+            <li>
+                <div class="fb-profile">
+                <img ng-src="/images/{{pItems.personalImage.split('fakepath\\')[1]}}" class="fb-image-sm" style="  border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 200px;
+                                                                                                                 height: 200px;">  </div> 
+            </li>
+              
+             
+        <li>
+        <div class="fb-profile-text">
+         <h2><b>User Name</b>: {{pItems.username}}</h2>
+              <h4><p><b>Age</b>: {{pItems.age}}</p></h4>
+    <h4><p><b>gender</b>: {{pItems.gender}}</p></h4>
+    <h4><p><b>Major</b>: {{pItems.favlang}}</p></h4>
+        </div>
+            </li>
+<!--
+            <li>
+          <img ng-src="/images/{{pItems.personalImage.split('fakepath\\')[1]}}" class="fb-image-sm">
+            </li>
+            <li>
+            <p> skill: {{pItems.skill}}</p>
+            </li>
+             <li>
+-->
+<!--
+               <p> note: {{pItems.note}}</p>
+            </li>
+   <li>
+             <p> phone: {{pItems.phone}}</p>
+            </li>
+   <li>
+             <p> email: {{pItems.email}}</p>
+            </li>
+-->
+          </ul>
+          <div>
+            <div class="tab-pane active" id="tab_default_1">
+ 
+              <div>
+         <a href="/#/join" class="btn btn-danger btn-block">Add,Change your information</a>
+    
+  
+                  
+                  
+                  
+<!--
+ <div class="add-issue">
+         
+        <div class="row" ng-show="addIssueFields">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="row">
+                       <h1>Share us all News about science</h1>
+                    <div class="col-md-12">
+                        <input placeholder="Title" class="form-control" type="text" ng-model="title">
+                        <textarea rows="3" placeholder="Description" class="form-control" ng-model="desc"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button ng-click="addNewIssue()" class="btn btn-success">Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" ng-show="addBtn">
+            <div class="col-md-8 col-md-offset-2">
+                <button ng-click="showIssueField()" class="btn btn-success">Share us all News about science</button>
+            </div>
+        </div>
+          <br>
+    </div>
+-->
+                  
+                  
+
+
+              </div>
+<!--
+              <h4>About her Family</h4>
+              <p>
+                About her family she belongs to a religious and a well cultural family background. 
+                Father - Retired from a Co-operate Bank as a Manager. 
+                Mother - she is a home maker. 
+                1 younger brother - works for Life Insurance n manages cluster. 
+              </p>
+              <h4>Education </h4>
+              <p>I have done PG in Human Resourses</p>
+              <h4>Occupation</h4>
+              <p>At present Working in Insurance sector</p>
+-->
+           
+<!--
+            </div>
+            <div class="tab-pane" id="tab_default_2">
+              <p>
+                Education& Career
+              </p>
+              <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                     <label for="email">Highest Education:</label>
+                      <p> MBA/PGDM</p>
+                 </div>
+                  <div class="form-group">
+                     <label>experince:</label>
+                       <p>{{pItems.experince}} </p>
+                 </div>
+                  <div class="form-group">
+                     <label>skill:</label>
+                          <p>{{pItems.skill}}</p>
+                 </div>
+                  <div class="form-group">
+                     <label>note:</label>
+                      <p>{{pItems.note}}</p>
+                 </div>
+              </div>
+              <div class="col-sm-6">
+                 <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+
+               </div>
+              </div>
+
+             
+           
+            </div>
+            <div class="tab-pane" id="tab_default_3">
+              <p>
+                Family Details
+              </p>
+              <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                     <label for="email">Highest Education:</label>
+                      <p> MBA/PGDM</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+              </div>
+              <div class="col-sm-6">
+                 <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+
+               </div>
+              </div>
+            </div>
+             <div class="tab-pane" id="tab_default_4">
+              <p>
+               Lifestyle
+
+              </p>
+               <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                     <label for="email">Highest Education:</label>
+                      <p> MBA/PGDM</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+              </div>
+              <div class="col-sm-6">
+                 <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+-->
+      </div>
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            </div>
+          </div>
+      </div>
+      
+      
+      
+      
+      
+  </div>
+  <div class="col-sm-8">
+   <div class="panel panel-default">
+    <div class="menu_title">
+       <h1>About me...</h1>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-lg-12">
+                 <div class="form-group">
+                      <label>experince:</label>
+                       <p>{{pItems.experince}} </p>
+                 </div>
+                  <div class="form-group">
+                        <label>skill:</label>
+                          <p>{{pItems.skill}}</p>
+                  </div>
+                  <div class="form-group">
+              <label>note:</label>
+                      <p>{{pItems.note}}</p>
+                  </div>
+                   <div class="form-group">
+                      <label>phone:</label>
+                          <p>{{pItems.phone}}</p>
+                       
+                   </div>
+                    <div class="form-group">
+                      <label>email:</label>
+                       <p>{{pItems.email}}</p>
+                    </div>
+<!--
+                    <div class="form-group">
+                      <label for="email">Rashi/ Moon sign:</label>
+                      <p> Mesh</p>
+                    </div>
+                     <div class="form-group">
+                      <label for="email">Nakshtra:</label>
+                      <p> Bharani</p>
+                    </div>
+                      <div class="form-group">
+                      <label for="email">Manglik:</label>
+                      <p> Manglik</p>
+                    </div>
+-->
+<!--                <button type="submit" > </button>-->
+               
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+</div>
+    
+    
+
+    
+
+<!--
+<div class="row content">
+ <br>
+           <br>
+          <br>
+
+       
+
+ 
+<div class="col-md-12" ng-init="loadMyData()">
+
+
+    <div class="panel panel-default">
+
+      <a class="fa fa-window-close" href="/#/bla" id="hide"></a>
+
+
+        <div class="panel-body">
+
+  
+   <div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+
+          <img src="" alt="Lights" style="width:100%">
+          
+          <div class="caption">
+              
+
+    <h1><p><b>User Name</b>: {{pItems.username}}</p></h1>
+    <h1><p><b>Age</b>: {{pItems.age}}</p></h1>
+    <h1><p><b>gender</b>: {{pItems.gender}}</p></h1>
+    <h1><p><b>fav</b>: {{pItems.favlang}}</p></h1>
+    
+   
+
+          </div>
+       
+      </div>
+    </div>
+     <div class="col-md-6">
+                <div class="thumbnail">
+
+          <div class="caption">
+                <form name ="bla" style="color:#337ab7">
+  
+             <i class="fa fa-weixin fa-3x" aria-hidden="true"></i>
+<i class="fa fa-phone-square fa-3x" aria-hidden="true"></i>
+   <i class="fa fa-video-camera fa-3x" aria-hidden="true"></i>
+
+ <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+   
+
+     </form>
+          </div>
+    
+      </div>
+            </div>
+             <div class="col-md-12">
+         <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="" alt="Lights" style="width:100%">
+          <div class="caption">
+                <form name ="bla" style="color:#337ab7">
+
+     </form>
+   </div>
+       
+      </div>
+            </div>
+</div>
+  
+   
+    
+        </div>
+    </div>
+  
+</div>
+</div>
+-->
+
+ 
+	
+</div>
